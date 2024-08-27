@@ -101,7 +101,7 @@ check out the penTrackingScript.ipynb for the complete code
 ![image](https://github.com/user-attachments/assets/daec24fd-ce12-4c99-ac0f-5df1990257e8)
 ![Screenshot 2024-08-26 072339](https://github.com/user-attachments/assets/a3da49e1-9948-47a5-9568-fd4066a3e529)
 
-### 4. Phase_4 [Model Deployement, Building WebApplication]
+### 4. Phase_4 [Model Deployment, Building WebApplication]
 #### >>> Using Python Flask Framework, the web application is built. However, project development is in process.
 #### >>> On testing local server, a simple webpage:
 ![Screenshot 2024-08-27 123230](https://github.com/user-attachments/assets/35ba244d-d8fd-42ce-b738-8d86ea094f97)
