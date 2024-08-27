@@ -66,7 +66,8 @@ def predict_image(image_path):
     predictions = predictions.reshape((10, 4))
 
     return predictions
-
+```
+```
 image_path = 'E:/AI_PROJECTS/ObjectDetection/PenDetection/test/41dvxYtTN7L._AC_UF1000,1000_QL80_FMwebp_.webp'
 predictions = predict_image(image_path)
 print(predictions)
@@ -89,6 +90,7 @@ OUTPUT:
 check out the penTrackingScript.ipynb for the complete code
 ```
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/daec24fd-ce12-4c99-ac0f-5df1990257e8)
 
 
 
