@@ -39,6 +39,58 @@ model.fit(images, labels, epochs=500, verbose=1, callbacks=[MetricsCallback()])
     
 
 print("Model training is completed!") ```
+![image](https://github.com/user-attachments/assets/493b765a-78ea-4446-ada8-b8495c84af16)
+
+
+## 3. Phase_3 [TESTING MODEL]
+### >>> After Saving model, Testing & Model Evaluation is done
+### >>> Testing using particular image file
+
+```
+# Required libraries to test an image file
+import tensorflow as tf
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+```
+```
+# Prediction function
+
+def predict_image(image_path):
+    image = cv2.imread(image_path)
+    image_resized = (cv2.resize(image, (224,224)))/255.0
+    image_expanded = np.expand_dims(image_resized, axis=0)
+
+    predictions = model.predict(image_expanded)
+    # predictions = predictions.reshape((max_boxes, 4))
+    predictions = predictions.reshape((10, 4))
+
+    return predictions
+
+image_path = 'E:/AI_PROJECTS/ObjectDetection/PenDetection/test/41dvxYtTN7L._AC_UF1000,1000_QL80_FMwebp_.webp'
+predictions = predict_image(image_path)
+print(predictions)
+
+OUTPUT:
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 226ms/step
+[[ 3.61751343e+02  4.37374687e+00  4.70183075e+02  9.96324158e+02]
+ [ 2.38657303e+02  4.71720123e+00  3.53916443e+02  1.00044708e+03]
+ [ 1.19947411e+02  4.28417778e+00  2.32872391e+02  1.00281757e+03]
+ [ 2.80680728e+00  3.24937606e+00  1.18191124e+02  1.00761493e+03]
+ [ 9.47685242e+00 -2.04298973e+00  5.47523355e+00  2.49926662e+00]
+ [ 5.50797319e+00 -2.12698174e+00  1.84664619e+00  3.75212121e+00]
+ [ 4.71004391e+00  1.09558538e-01  7.83584213e+00  7.10538006e+00]
+ [ 4.51294899e+00 -1.90369725e+00  8.51321793e+00  7.55034781e+00]
+ [ 6.96509933e+00 -1.31059539e+00  4.06070614e+00  9.07032681e+00]
+ [ 5.69514036e+00  7.32337117e-01  3.27979445e+00  1.01378269e+01]]
+...
+...
+...
+check out the penTrackingScript.ipynb for the complete code
+```
+### OUTPUT
+
+
 
 
 
