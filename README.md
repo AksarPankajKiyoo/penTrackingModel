@@ -38,7 +38,8 @@ model = tf.keras.Sequential([tf.keras.layers.Input(shape=(224,224,3)),
 model.fit(images, labels, epochs=500, verbose=1, callbacks=[MetricsCallback()])
     
 
-print("Model training is completed!") ```
+print("Model training is completed!")
+```
 ![image](https://github.com/user-attachments/assets/493b765a-78ea-4446-ada8-b8495c84af16)
 
 
@@ -53,6 +54,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 ```
+
 ```
 # Prediction function
 
@@ -67,6 +69,7 @@ def predict_image(image_path):
 
     return predictions
 ```
+
 ```
 image_path = 'E:/AI_PROJECTS/ObjectDetection/PenDetection/test/41dvxYtTN7L._AC_UF1000,1000_QL80_FMwebp_.webp'
 predictions = predict_image(image_path)
@@ -89,6 +92,7 @@ OUTPUT:
 ...
 check out the penTrackingScript.ipynb for the complete code
 ```
+
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/daec24fd-ce12-4c99-ac0f-5df1990257e8)
 
