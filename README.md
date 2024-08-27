@@ -12,6 +12,8 @@ Note: There is a bug in this model, that is it predicts 10 objects whether there
 #### >> Making Annotations, using labelImg tool and saving all training data in training folder
 
 ### 2. Phase_2 [Training, Building & Saving penDetectionModel]
+#### >> Training model using traing scripts
+`code`
 
 
 
