@@ -29,7 +29,16 @@ model = tf.keras.Sequential([tf.keras.layers.Input(shape=(224,224,3)),
                              tf.keras.layers.MaxPooling2D((2,2)),
                              tf.keras.layers.Flatten(),
                              tf.keras.layers.Dense(128,activation='relu'),
-                             tf.keras.layers.Dense(max_boxes*4)]) #Assuming 4 coordinates for bounding box```
+                             tf.keras.layers.Dense(max_boxes*4)]) #Assuming 4 coordinates for bounding box
+...
+...
+...
+# Train the model with status updates
+
+model.fit(images, labels, epochs=500, verbose=1, callbacks=[MetricsCallback()])
+    
+
+print("Model training is completed!") ```
 
 
 
