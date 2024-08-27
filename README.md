@@ -1,7 +1,6 @@
 ## penTrackingModel [TensorFlow 2.x]
 This is a TensorFlow based custom model [developed by Pankaj Kumar], and is on development phase.
 
-### Navneet Enterprise   
 Note: There is a bug in this model, that is it predicts 10 objects whether there are 10 objects or less. This bug can be fixed by re-training model.
 
 # MAIN KEYPOINTS PEN DETECTION WEB APPLICATION
@@ -10,6 +9,9 @@ Note: There is a bug in this model, that is it predicts 10 objects whether there
 #### >> Data Collections, such as collecting training datasets
 #### >> Downloading Annotation Tools, for e.g., labelImg 
 #### >> Making Annotations, using labelImg tool and saving all training data in training folder
+![Screenshot 2024-08-25 075350](https://github.com/user-attachments/assets/ce1c6937-2050-4732-a3ff-33e50c9e1d47)
+![image](https://github.com/user-attachments/assets/a7557600-549d-4b70-a848-ceb6ca063a32)
+
 
 ### 2. Phase_2 [Training, Building & Saving penDetectionModel]
 #### >> Training model using traing scripts
@@ -95,6 +97,18 @@ check out the penTrackingScript.ipynb for the complete code
 
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/daec24fd-ce12-4c99-ac0f-5df1990257e8)
+![Screenshot 2024-08-26 072339](https://github.com/user-attachments/assets/a3da49e1-9948-47a5-9568-fd4066a3e529)
+
+### 4. Phase_4 [Model Deployement, Building WebApplication]
+#### >>> Using Python Flask Framework, the web application is built. However, project development is in process.
+#### >>> On testing local server, a simple webpage:
+![Screenshot 2024-08-27 123230](https://github.com/user-attachments/assets/35ba244d-d8fd-42ce-b738-8d86ea094f97)
+
+
+
+
+
+
 
 
 
