@@ -13,7 +13,7 @@ Note: There is a bug in this model, that is it predicts 10 objects whether there
 
 ### 2. Phase_2 [Training, Building & Saving penDetectionModel]
 #### >> Training model using traing scripts
-`# Load data
+```# Load data
 
 images, labels = load_data(image_dir)
 
@@ -29,7 +29,7 @@ model = tf.keras.Sequential([tf.keras.layers.Input(shape=(224,224,3)),
                              tf.keras.layers.MaxPooling2D((2,2)),
                              tf.keras.layers.Flatten(),
                              tf.keras.layers.Dense(128,activation='relu'),
-                             tf.keras.layers.Dense(max_boxes*4)]) #Assuming 4 coordinates for bounding box`
+                             tf.keras.layers.Dense(max_boxes*4)]) #Assuming 4 coordinates for bounding box```
 
 
 
